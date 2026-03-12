@@ -56,7 +56,7 @@ export default function AnimatedStats() {
             {values[i].toLocaleString()}
             {stat.suffix}
           </div>
-          <div className="text-sm text-blue-200 mt-1">{stat.label}</div>
+          <div className="text-sm text-white font-medium mt-1">{stat.label}</div>
         </div>
       ))}
     </div>
