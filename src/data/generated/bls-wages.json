@@ -1,0 +1,22 @@
+{
+  "houston-tx": { "avgHourlyWage": 22.45, "occupationCount": 10, "occupations": [], "source": "BLS OEWS 2023 (cached)", "fetchedAt": "2025-01-01T00:00:00.000Z" },
+  "dallas-tx": { "avgHourlyWage": 23.10, "occupationCount": 10, "occupations": [], "source": "BLS OEWS 2023 (cached)", "fetchedAt": "2025-01-01T00:00:00.000Z" },
+  "phoenix-az": { "avgHourlyWage": 22.80, "occupationCount": 10, "occupations": [], "source": "BLS OEWS 2023 (cached)", "fetchedAt": "2025-01-01T00:00:00.000Z" },
+  "san-antonio-tx": { "avgHourlyWage": 20.50, "occupationCount": 10, "occupations": [], "source": "BLS OEWS 2023 (cached)", "fetchedAt": "2025-01-01T00:00:00.000Z" },
+  "austin-tx": { "avgHourlyWage": 23.65, "occupationCount": 10, "occupations": [], "source": "BLS OEWS 2023 (cached)", "fetchedAt": "2025-01-01T00:00:00.000Z" },
+  "fort-myers-fl": { "avgHourlyWage": 21.30, "occupationCount": 10, "occupations": [], "source": "BLS OEWS 2023 (cached)", "fetchedAt": "2025-01-01T00:00:00.000Z" },
+  "charlotte-nc": { "avgHourlyWage": 22.15, "occupationCount": 10, "occupations": [], "source": "BLS OEWS 2023 (cached)", "fetchedAt": "2025-01-01T00:00:00.000Z" },
+  "nashville-tn": { "avgHourlyWage": 22.70, "occupationCount": 10, "occupations": [], "source": "BLS OEWS 2023 (cached)", "fetchedAt": "2025-01-01T00:00:00.000Z" },
+  "raleigh-nc": { "avgHourlyWage": 22.40, "occupationCount": 10, "occupations": [], "source": "BLS OEWS 2023 (cached)", "fetchedAt": "2025-01-01T00:00:00.000Z" },
+  "boise-id": { "avgHourlyWage": 21.90, "occupationCount": 10, "occupations": [], "source": "BLS OEWS 2023 (cached)", "fetchedAt": "2025-01-01T00:00:00.000Z" },
+  "tampa-fl": { "avgHourlyWage": 21.60, "occupationCount": 10, "occupations": [], "source": "BLS OEWS 2023 (cached)", "fetchedAt": "2025-01-01T00:00:00.000Z" },
+  "denver-co": { "avgHourlyWage": 25.30, "occupationCount": 10, "occupations": [], "source": "BLS OEWS 2023 (cached)", "fetchedAt": "2025-01-01T00:00:00.000Z" },
+  "atlanta-ga": { "avgHourlyWage": 22.85, "occupationCount": 10, "occupations": [], "source": "BLS OEWS 2023 (cached)", "fetchedAt": "2025-01-01T00:00:00.000Z" },
+  "orlando-fl": { "avgHourlyWage": 21.40, "occupationCount": 10, "occupations": [], "source": "BLS OEWS 2023 (cached)", "fetchedAt": "2025-01-01T00:00:00.000Z" },
+  "jacksonville-fl": { "avgHourlyWage": 21.20, "occupationCount": 10, "occupations": [], "source": "BLS OEWS 2023 (cached)", "fetchedAt": "2025-01-01T00:00:00.000Z" },
+  "las-vegas-nv": { "avgHourlyWage": 24.50, "occupationCount": 10, "occupations": [], "source": "BLS OEWS 2023 (cached)", "fetchedAt": "2025-01-01T00:00:00.000Z" },
+  "salt-lake-city-ut": { "avgHourlyWage": 22.60, "occupationCount": 10, "occupations": [], "source": "BLS OEWS 2023 (cached)", "fetchedAt": "2025-01-01T00:00:00.000Z" },
+  "columbus-oh": { "avgHourlyWage": 23.00, "occupationCount": 10, "occupations": [], "source": "BLS OEWS 2023 (cached)", "fetchedAt": "2025-01-01T00:00:00.000Z" },
+  "indianapolis-in": { "avgHourlyWage": 22.30, "occupationCount": 10, "occupations": [], "source": "BLS OEWS 2023 (cached)", "fetchedAt": "2025-01-01T00:00:00.000Z" },
+  "san-diego-ca": { "avgHourlyWage": 27.80, "occupationCount": 10, "occupations": [], "source": "BLS OEWS 2023 (cached)", "fetchedAt": "2025-01-01T00:00:00.000Z" }
+}

@@ -1,0 +1,22 @@
+{
+  "houston-tx": { "year": 2023, "totalPermits": 42500, "totalUnits": 58200, "source": "Census BPS 2023 (cached)", "fetchedAt": "2025-01-01T00:00:00.000Z" },
+  "dallas-tx": { "year": 2023, "totalPermits": 38200, "totalUnits": 51400, "source": "Census BPS 2023 (cached)", "fetchedAt": "2025-01-01T00:00:00.000Z" },
+  "phoenix-az": { "year": 2023, "totalPermits": 31500, "totalUnits": 42800, "source": "Census BPS 2023 (cached)", "fetchedAt": "2025-01-01T00:00:00.000Z" },
+  "san-antonio-tx": { "year": 2023, "totalPermits": 16800, "totalUnits": 22100, "source": "Census BPS 2023 (cached)", "fetchedAt": "2025-01-01T00:00:00.000Z" },
+  "austin-tx": { "year": 2023, "totalPermits": 22400, "totalUnits": 35600, "source": "Census BPS 2023 (cached)", "fetchedAt": "2025-01-01T00:00:00.000Z" },
+  "fort-myers-fl": { "year": 2023, "totalPermits": 8900, "totalUnits": 12400, "source": "Census BPS 2023 (cached)", "fetchedAt": "2025-01-01T00:00:00.000Z" },
+  "charlotte-nc": { "year": 2023, "totalPermits": 24100, "totalUnits": 33800, "source": "Census BPS 2023 (cached)", "fetchedAt": "2025-01-01T00:00:00.000Z" },
+  "nashville-tn": { "year": 2023, "totalPermits": 18500, "totalUnits": 27200, "source": "Census BPS 2023 (cached)", "fetchedAt": "2025-01-01T00:00:00.000Z" },
+  "raleigh-nc": { "year": 2023, "totalPermits": 19200, "totalUnits": 26800, "source": "Census BPS 2023 (cached)", "fetchedAt": "2025-01-01T00:00:00.000Z" },
+  "boise-id": { "year": 2023, "totalPermits": 7800, "totalUnits": 10500, "source": "Census BPS 2023 (cached)", "fetchedAt": "2025-01-01T00:00:00.000Z" },
+  "tampa-fl": { "year": 2023, "totalPermits": 21300, "totalUnits": 29800, "source": "Census BPS 2023 (cached)", "fetchedAt": "2025-01-01T00:00:00.000Z" },
+  "denver-co": { "year": 2023, "totalPermits": 17600, "totalUnits": 25400, "source": "Census BPS 2023 (cached)", "fetchedAt": "2025-01-01T00:00:00.000Z" },
+  "atlanta-ga": { "year": 2023, "totalPermits": 28400, "totalUnits": 39200, "source": "Census BPS 2023 (cached)", "fetchedAt": "2025-01-01T00:00:00.000Z" },
+  "orlando-fl": { "year": 2023, "totalPermits": 19800, "totalUnits": 28100, "source": "Census BPS 2023 (cached)", "fetchedAt": "2025-01-01T00:00:00.000Z" },
+  "jacksonville-fl": { "year": 2023, "totalPermits": 14200, "totalUnits": 19600, "source": "Census BPS 2023 (cached)", "fetchedAt": "2025-01-01T00:00:00.000Z" },
+  "las-vegas-nv": { "year": 2023, "totalPermits": 16500, "totalUnits": 23800, "source": "Census BPS 2023 (cached)", "fetchedAt": "2025-01-01T00:00:00.000Z" },
+  "salt-lake-city-ut": { "year": 2023, "totalPermits": 9400, "totalUnits": 14200, "source": "Census BPS 2023 (cached)", "fetchedAt": "2025-01-01T00:00:00.000Z" },
+  "columbus-oh": { "year": 2023, "totalPermits": 12800, "totalUnits": 18400, "source": "Census BPS 2023 (cached)", "fetchedAt": "2025-01-01T00:00:00.000Z" },
+  "indianapolis-in": { "year": 2023, "totalPermits": 13500, "totalUnits": 18800, "source": "Census BPS 2023 (cached)", "fetchedAt": "2025-01-01T00:00:00.000Z" },
+  "san-diego-ca": { "year": 2023, "totalPermits": 11200, "totalUnits": 17600, "source": "Census BPS 2023 (cached)", "fetchedAt": "2025-01-01T00:00:00.000Z" }
+}

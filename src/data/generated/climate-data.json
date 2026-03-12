@@ -1,0 +1,342 @@
+{
+  "houston-tx": {
+    "months": [
+      { "month": 1, "avgHigh": 63, "avgLow": 43, "totalPrecipInches": 3.2 },
+      { "month": 2, "avgHigh": 66, "avgLow": 46, "totalPrecipInches": 3.0 },
+      { "month": 3, "avgHigh": 73, "avgLow": 52, "totalPrecipInches": 3.4 },
+      { "month": 4, "avgHigh": 79, "avgLow": 59, "totalPrecipInches": 3.6 },
+      { "month": 5, "avgHigh": 86, "avgLow": 67, "totalPrecipInches": 5.2 },
+      { "month": 6, "avgHigh": 91, "avgLow": 73, "totalPrecipInches": 5.9 },
+      { "month": 7, "avgHigh": 94, "avgLow": 75, "totalPrecipInches": 3.3 },
+      { "month": 8, "avgHigh": 94, "avgLow": 75, "totalPrecipInches": 3.8 },
+      { "month": 9, "avgHigh": 89, "avgLow": 70, "totalPrecipInches": 4.6 },
+      { "month": 10, "avgHigh": 82, "avgLow": 61, "totalPrecipInches": 5.7 },
+      { "month": 11, "avgHigh": 72, "avgLow": 51, "totalPrecipInches": 4.2 },
+      { "month": 12, "avgHigh": 64, "avgLow": 44, "totalPrecipInches": 3.5 }
+    ],
+    "source": "NOAA 30-year avg (cached)", "year": 2024, "fetchedAt": "2025-01-01T00:00:00.000Z"
+  },
+  "dallas-tx": {
+    "months": [
+      { "month": 1, "avgHigh": 57, "avgLow": 36, "totalPrecipInches": 2.3 },
+      { "month": 2, "avgHigh": 61, "avgLow": 40, "totalPrecipInches": 2.7 },
+      { "month": 3, "avgHigh": 69, "avgLow": 47, "totalPrecipInches": 3.6 },
+      { "month": 4, "avgHigh": 77, "avgLow": 55, "totalPrecipInches": 3.5 },
+      { "month": 5, "avgHigh": 84, "avgLow": 64, "totalPrecipInches": 5.0 },
+      { "month": 6, "avgHigh": 92, "avgLow": 72, "totalPrecipInches": 4.0 },
+      { "month": 7, "avgHigh": 96, "avgLow": 76, "totalPrecipInches": 2.0 },
+      { "month": 8, "avgHigh": 97, "avgLow": 76, "totalPrecipInches": 2.2 },
+      { "month": 9, "avgHigh": 89, "avgLow": 68, "totalPrecipInches": 3.0 },
+      { "month": 10, "avgHigh": 79, "avgLow": 57, "totalPrecipInches": 4.8 },
+      { "month": 11, "avgHigh": 67, "avgLow": 46, "totalPrecipInches": 3.2 },
+      { "month": 12, "avgHigh": 58, "avgLow": 38, "totalPrecipInches": 2.8 }
+    ],
+    "source": "NOAA 30-year avg (cached)", "year": 2024, "fetchedAt": "2025-01-01T00:00:00.000Z"
+  },
+  "phoenix-az": {
+    "months": [
+      { "month": 1, "avgHigh": 67, "avgLow": 44, "totalPrecipInches": 0.8 },
+      { "month": 2, "avgHigh": 71, "avgLow": 47, "totalPrecipInches": 0.8 },
+      { "month": 3, "avgHigh": 77, "avgLow": 52, "totalPrecipInches": 0.9 },
+      { "month": 4, "avgHigh": 85, "avgLow": 59, "totalPrecipInches": 0.2 },
+      { "month": 5, "avgHigh": 95, "avgLow": 68, "totalPrecipInches": 0.1 },
+      { "month": 6, "avgHigh": 104, "avgLow": 77, "totalPrecipInches": 0.0 },
+      { "month": 7, "avgHigh": 106, "avgLow": 83, "totalPrecipInches": 0.9 },
+      { "month": 8, "avgHigh": 104, "avgLow": 82, "totalPrecipInches": 1.0 },
+      { "month": 9, "avgHigh": 100, "avgLow": 76, "totalPrecipInches": 0.6 },
+      { "month": 10, "avgHigh": 89, "avgLow": 64, "totalPrecipInches": 0.6 },
+      { "month": 11, "avgHigh": 77, "avgLow": 52, "totalPrecipInches": 0.6 },
+      { "month": 12, "avgHigh": 66, "avgLow": 43, "totalPrecipInches": 0.9 }
+    ],
+    "source": "NOAA 30-year avg (cached)", "year": 2024, "fetchedAt": "2025-01-01T00:00:00.000Z"
+  },
+  "san-antonio-tx": {
+    "months": [
+      { "month": 1, "avgHigh": 62, "avgLow": 39, "totalPrecipInches": 1.7 },
+      { "month": 2, "avgHigh": 66, "avgLow": 43, "totalPrecipInches": 1.8 },
+      { "month": 3, "avgHigh": 74, "avgLow": 50, "totalPrecipInches": 2.0 },
+      { "month": 4, "avgHigh": 80, "avgLow": 57, "totalPrecipInches": 2.4 },
+      { "month": 5, "avgHigh": 87, "avgLow": 65, "totalPrecipInches": 4.3 },
+      { "month": 6, "avgHigh": 93, "avgLow": 72, "totalPrecipInches": 4.5 },
+      { "month": 7, "avgHigh": 96, "avgLow": 74, "totalPrecipInches": 2.0 },
+      { "month": 8, "avgHigh": 96, "avgLow": 74, "totalPrecipInches": 2.4 },
+      { "month": 9, "avgHigh": 90, "avgLow": 69, "totalPrecipInches": 3.2 },
+      { "month": 10, "avgHigh": 82, "avgLow": 59, "totalPrecipInches": 3.8 },
+      { "month": 11, "avgHigh": 71, "avgLow": 49, "totalPrecipInches": 2.7 },
+      { "month": 12, "avgHigh": 63, "avgLow": 40, "totalPrecipInches": 2.0 }
+    ],
+    "source": "NOAA 30-year avg (cached)", "year": 2024, "fetchedAt": "2025-01-01T00:00:00.000Z"
+  },
+  "austin-tx": {
+    "months": [
+      { "month": 1, "avgHigh": 62, "avgLow": 40, "totalPrecipInches": 2.1 },
+      { "month": 2, "avgHigh": 66, "avgLow": 44, "totalPrecipInches": 2.0 },
+      { "month": 3, "avgHigh": 73, "avgLow": 51, "totalPrecipInches": 2.8 },
+      { "month": 4, "avgHigh": 80, "avgLow": 58, "totalPrecipInches": 2.6 },
+      { "month": 5, "avgHigh": 87, "avgLow": 66, "totalPrecipInches": 4.8 },
+      { "month": 6, "avgHigh": 93, "avgLow": 72, "totalPrecipInches": 4.2 },
+      { "month": 7, "avgHigh": 97, "avgLow": 75, "totalPrecipInches": 1.8 },
+      { "month": 8, "avgHigh": 97, "avgLow": 75, "totalPrecipInches": 2.1 },
+      { "month": 9, "avgHigh": 91, "avgLow": 69, "totalPrecipInches": 3.4 },
+      { "month": 10, "avgHigh": 82, "avgLow": 59, "totalPrecipInches": 4.0 },
+      { "month": 11, "avgHigh": 71, "avgLow": 49, "totalPrecipInches": 3.0 },
+      { "month": 12, "avgHigh": 63, "avgLow": 41, "totalPrecipInches": 2.4 }
+    ],
+    "source": "NOAA 30-year avg (cached)", "year": 2024, "fetchedAt": "2025-01-01T00:00:00.000Z"
+  },
+  "fort-myers-fl": {
+    "months": [
+      { "month": 1, "avgHigh": 75, "avgLow": 54, "totalPrecipInches": 1.8 },
+      { "month": 2, "avgHigh": 77, "avgLow": 55, "totalPrecipInches": 2.2 },
+      { "month": 3, "avgHigh": 81, "avgLow": 60, "totalPrecipInches": 2.5 },
+      { "month": 4, "avgHigh": 85, "avgLow": 64, "totalPrecipInches": 1.8 },
+      { "month": 5, "avgHigh": 90, "avgLow": 69, "totalPrecipInches": 3.5 },
+      { "month": 6, "avgHigh": 92, "avgLow": 74, "totalPrecipInches": 9.5 },
+      { "month": 7, "avgHigh": 92, "avgLow": 75, "totalPrecipInches": 8.8 },
+      { "month": 8, "avgHigh": 92, "avgLow": 75, "totalPrecipInches": 9.2 },
+      { "month": 9, "avgHigh": 91, "avgLow": 74, "totalPrecipInches": 7.8 },
+      { "month": 10, "avgHigh": 87, "avgLow": 69, "totalPrecipInches": 3.2 },
+      { "month": 11, "avgHigh": 81, "avgLow": 62, "totalPrecipInches": 1.6 },
+      { "month": 12, "avgHigh": 76, "avgLow": 55, "totalPrecipInches": 1.3 }
+    ],
+    "source": "NOAA 30-year avg (cached)", "year": 2024, "fetchedAt": "2025-01-01T00:00:00.000Z"
+  },
+  "charlotte-nc": {
+    "months": [
+      { "month": 1, "avgHigh": 51, "avgLow": 31, "totalPrecipInches": 3.5 },
+      { "month": 2, "avgHigh": 55, "avgLow": 33, "totalPrecipInches": 3.3 },
+      { "month": 3, "avgHigh": 63, "avgLow": 40, "totalPrecipInches": 4.0 },
+      { "month": 4, "avgHigh": 73, "avgLow": 49, "totalPrecipInches": 3.1 },
+      { "month": 5, "avgHigh": 80, "avgLow": 57, "totalPrecipInches": 3.6 },
+      { "month": 6, "avgHigh": 87, "avgLow": 66, "totalPrecipInches": 3.7 },
+      { "month": 7, "avgHigh": 91, "avgLow": 70, "totalPrecipInches": 3.9 },
+      { "month": 8, "avgHigh": 89, "avgLow": 69, "totalPrecipInches": 3.7 },
+      { "month": 9, "avgHigh": 83, "avgLow": 62, "totalPrecipInches": 3.5 },
+      { "month": 10, "avgHigh": 73, "avgLow": 50, "totalPrecipInches": 3.3 },
+      { "month": 11, "avgHigh": 62, "avgLow": 40, "totalPrecipInches": 3.1 },
+      { "month": 12, "avgHigh": 53, "avgLow": 33, "totalPrecipInches": 3.4 }
+    ],
+    "source": "NOAA 30-year avg (cached)", "year": 2024, "fetchedAt": "2025-01-01T00:00:00.000Z"
+  },
+  "nashville-tn": {
+    "months": [
+      { "month": 1, "avgHigh": 47, "avgLow": 28, "totalPrecipInches": 3.7 },
+      { "month": 2, "avgHigh": 52, "avgLow": 31, "totalPrecipInches": 3.7 },
+      { "month": 3, "avgHigh": 62, "avgLow": 39, "totalPrecipInches": 4.3 },
+      { "month": 4, "avgHigh": 72, "avgLow": 48, "totalPrecipInches": 4.1 },
+      { "month": 5, "avgHigh": 80, "avgLow": 57, "totalPrecipInches": 5.1 },
+      { "month": 6, "avgHigh": 88, "avgLow": 66, "totalPrecipInches": 4.1 },
+      { "month": 7, "avgHigh": 91, "avgLow": 70, "totalPrecipInches": 4.6 },
+      { "month": 8, "avgHigh": 90, "avgLow": 69, "totalPrecipInches": 3.2 },
+      { "month": 9, "avgHigh": 84, "avgLow": 61, "totalPrecipInches": 3.6 },
+      { "month": 10, "avgHigh": 73, "avgLow": 49, "totalPrecipInches": 3.0 },
+      { "month": 11, "avgHigh": 60, "avgLow": 39, "totalPrecipInches": 3.9 },
+      { "month": 12, "avgHigh": 49, "avgLow": 31, "totalPrecipInches": 4.4 }
+    ],
+    "source": "NOAA 30-year avg (cached)", "year": 2024, "fetchedAt": "2025-01-01T00:00:00.000Z"
+  },
+  "raleigh-nc": {
+    "months": [
+      { "month": 1, "avgHigh": 50, "avgLow": 30, "totalPrecipInches": 3.4 },
+      { "month": 2, "avgHigh": 54, "avgLow": 32, "totalPrecipInches": 3.1 },
+      { "month": 3, "avgHigh": 62, "avgLow": 38, "totalPrecipInches": 3.8 },
+      { "month": 4, "avgHigh": 72, "avgLow": 47, "totalPrecipInches": 2.9 },
+      { "month": 5, "avgHigh": 79, "avgLow": 56, "totalPrecipInches": 3.7 },
+      { "month": 6, "avgHigh": 86, "avgLow": 65, "totalPrecipInches": 3.8 },
+      { "month": 7, "avgHigh": 90, "avgLow": 69, "totalPrecipInches": 4.4 },
+      { "month": 8, "avgHigh": 88, "avgLow": 68, "totalPrecipInches": 4.3 },
+      { "month": 9, "avgHigh": 82, "avgLow": 61, "totalPrecipInches": 4.0 },
+      { "month": 10, "avgHigh": 72, "avgLow": 49, "totalPrecipInches": 3.2 },
+      { "month": 11, "avgHigh": 62, "avgLow": 39, "totalPrecipInches": 2.9 },
+      { "month": 12, "avgHigh": 52, "avgLow": 32, "totalPrecipInches": 3.0 }
+    ],
+    "source": "NOAA 30-year avg (cached)", "year": 2024, "fetchedAt": "2025-01-01T00:00:00.000Z"
+  },
+  "boise-id": {
+    "months": [
+      { "month": 1, "avgHigh": 37, "avgLow": 23, "totalPrecipInches": 1.3 },
+      { "month": 2, "avgHigh": 44, "avgLow": 27, "totalPrecipInches": 1.0 },
+      { "month": 3, "avgHigh": 55, "avgLow": 33, "totalPrecipInches": 1.3 },
+      { "month": 4, "avgHigh": 63, "avgLow": 38, "totalPrecipInches": 1.2 },
+      { "month": 5, "avgHigh": 72, "avgLow": 46, "totalPrecipInches": 1.2 },
+      { "month": 6, "avgHigh": 82, "avgLow": 53, "totalPrecipInches": 0.6 },
+      { "month": 7, "avgHigh": 92, "avgLow": 60, "totalPrecipInches": 0.3 },
+      { "month": 8, "avgHigh": 90, "avgLow": 59, "totalPrecipInches": 0.2 },
+      { "month": 9, "avgHigh": 79, "avgLow": 49, "totalPrecipInches": 0.5 },
+      { "month": 10, "avgHigh": 64, "avgLow": 39, "totalPrecipInches": 0.8 },
+      { "month": 11, "avgHigh": 48, "avgLow": 31, "totalPrecipInches": 1.3 },
+      { "month": 12, "avgHigh": 37, "avgLow": 23, "totalPrecipInches": 1.4 }
+    ],
+    "source": "NOAA 30-year avg (cached)", "year": 2024, "fetchedAt": "2025-01-01T00:00:00.000Z"
+  },
+  "tampa-fl": {
+    "months": [
+      { "month": 1, "avgHigh": 70, "avgLow": 52, "totalPrecipInches": 2.3 },
+      { "month": 2, "avgHigh": 72, "avgLow": 54, "totalPrecipInches": 2.7 },
+      { "month": 3, "avgHigh": 77, "avgLow": 59, "totalPrecipInches": 2.8 },
+      { "month": 4, "avgHigh": 82, "avgLow": 63, "totalPrecipInches": 1.8 },
+      { "month": 5, "avgHigh": 88, "avgLow": 69, "totalPrecipInches": 2.8 },
+      { "month": 6, "avgHigh": 90, "avgLow": 74, "totalPrecipInches": 7.4 },
+      { "month": 7, "avgHigh": 91, "avgLow": 76, "totalPrecipInches": 7.2 },
+      { "month": 8, "avgHigh": 91, "avgLow": 76, "totalPrecipInches": 7.6 },
+      { "month": 9, "avgHigh": 89, "avgLow": 74, "totalPrecipInches": 6.0 },
+      { "month": 10, "avgHigh": 84, "avgLow": 68, "totalPrecipInches": 2.4 },
+      { "month": 11, "avgHigh": 77, "avgLow": 60, "totalPrecipInches": 1.6 },
+      { "month": 12, "avgHigh": 72, "avgLow": 54, "totalPrecipInches": 2.3 }
+    ],
+    "source": "NOAA 30-year avg (cached)", "year": 2024, "fetchedAt": "2025-01-01T00:00:00.000Z"
+  },
+  "denver-co": {
+    "months": [
+      { "month": 1, "avgHigh": 45, "avgLow": 16, "totalPrecipInches": 0.5 },
+      { "month": 2, "avgHigh": 48, "avgLow": 19, "totalPrecipInches": 0.5 },
+      { "month": 3, "avgHigh": 56, "avgLow": 27, "totalPrecipInches": 1.3 },
+      { "month": 4, "avgHigh": 62, "avgLow": 34, "totalPrecipInches": 1.7 },
+      { "month": 5, "avgHigh": 72, "avgLow": 43, "totalPrecipInches": 2.3 },
+      { "month": 6, "avgHigh": 83, "avgLow": 52, "totalPrecipInches": 1.8 },
+      { "month": 7, "avgHigh": 90, "avgLow": 58, "totalPrecipInches": 2.2 },
+      { "month": 8, "avgHigh": 87, "avgLow": 57, "totalPrecipInches": 1.8 },
+      { "month": 9, "avgHigh": 79, "avgLow": 47, "totalPrecipInches": 1.3 },
+      { "month": 10, "avgHigh": 66, "avgLow": 35, "totalPrecipInches": 1.0 },
+      { "month": 11, "avgHigh": 52, "avgLow": 24, "totalPrecipInches": 0.8 },
+      { "month": 12, "avgHigh": 44, "avgLow": 16, "totalPrecipInches": 0.5 }
+    ],
+    "source": "NOAA 30-year avg (cached)", "year": 2024, "fetchedAt": "2025-01-01T00:00:00.000Z"
+  },
+  "atlanta-ga": {
+    "months": [
+      { "month": 1, "avgHigh": 52, "avgLow": 33, "totalPrecipInches": 4.2 },
+      { "month": 2, "avgHigh": 57, "avgLow": 36, "totalPrecipInches": 4.5 },
+      { "month": 3, "avgHigh": 65, "avgLow": 43, "totalPrecipInches": 4.8 },
+      { "month": 4, "avgHigh": 73, "avgLow": 51, "totalPrecipInches": 3.4 },
+      { "month": 5, "avgHigh": 81, "avgLow": 60, "totalPrecipInches": 3.6 },
+      { "month": 6, "avgHigh": 87, "avgLow": 68, "totalPrecipInches": 3.9 },
+      { "month": 7, "avgHigh": 90, "avgLow": 71, "totalPrecipInches": 5.2 },
+      { "month": 8, "avgHigh": 89, "avgLow": 71, "totalPrecipInches": 3.7 },
+      { "month": 9, "avgHigh": 83, "avgLow": 65, "totalPrecipInches": 3.5 },
+      { "month": 10, "avgHigh": 73, "avgLow": 53, "totalPrecipInches": 3.1 },
+      { "month": 11, "avgHigh": 63, "avgLow": 43, "totalPrecipInches": 3.5 },
+      { "month": 12, "avgHigh": 54, "avgLow": 36, "totalPrecipInches": 3.9 }
+    ],
+    "source": "NOAA 30-year avg (cached)", "year": 2024, "fetchedAt": "2025-01-01T00:00:00.000Z"
+  },
+  "orlando-fl": {
+    "months": [
+      { "month": 1, "avgHigh": 71, "avgLow": 49, "totalPrecipInches": 2.3 },
+      { "month": 2, "avgHigh": 74, "avgLow": 51, "totalPrecipInches": 2.4 },
+      { "month": 3, "avgHigh": 78, "avgLow": 56, "totalPrecipInches": 3.5 },
+      { "month": 4, "avgHigh": 83, "avgLow": 60, "totalPrecipInches": 2.4 },
+      { "month": 5, "avgHigh": 89, "avgLow": 67, "totalPrecipInches": 3.5 },
+      { "month": 6, "avgHigh": 91, "avgLow": 72, "totalPrecipInches": 7.3 },
+      { "month": 7, "avgHigh": 92, "avgLow": 74, "totalPrecipInches": 7.2 },
+      { "month": 8, "avgHigh": 92, "avgLow": 74, "totalPrecipInches": 6.8 },
+      { "month": 9, "avgHigh": 90, "avgLow": 73, "totalPrecipInches": 5.6 },
+      { "month": 10, "avgHigh": 85, "avgLow": 67, "totalPrecipInches": 3.2 },
+      { "month": 11, "avgHigh": 78, "avgLow": 58, "totalPrecipInches": 2.2 },
+      { "month": 12, "avgHigh": 73, "avgLow": 51, "totalPrecipInches": 2.4 }
+    ],
+    "source": "NOAA 30-year avg (cached)", "year": 2024, "fetchedAt": "2025-01-01T00:00:00.000Z"
+  },
+  "jacksonville-fl": {
+    "months": [
+      { "month": 1, "avgHigh": 64, "avgLow": 42, "totalPrecipInches": 3.0 },
+      { "month": 2, "avgHigh": 67, "avgLow": 44, "totalPrecipInches": 2.8 },
+      { "month": 3, "avgHigh": 73, "avgLow": 50, "totalPrecipInches": 3.6 },
+      { "month": 4, "avgHigh": 79, "avgLow": 56, "totalPrecipInches": 2.8 },
+      { "month": 5, "avgHigh": 86, "avgLow": 63, "totalPrecipInches": 3.4 },
+      { "month": 6, "avgHigh": 90, "avgLow": 70, "totalPrecipInches": 6.2 },
+      { "month": 7, "avgHigh": 92, "avgLow": 73, "totalPrecipInches": 5.9 },
+      { "month": 8, "avgHigh": 91, "avgLow": 73, "totalPrecipInches": 6.4 },
+      { "month": 9, "avgHigh": 87, "avgLow": 70, "totalPrecipInches": 7.2 },
+      { "month": 10, "avgHigh": 80, "avgLow": 61, "totalPrecipInches": 3.8 },
+      { "month": 11, "avgHigh": 72, "avgLow": 51, "totalPrecipInches": 2.2 },
+      { "month": 12, "avgHigh": 65, "avgLow": 44, "totalPrecipInches": 2.6 }
+    ],
+    "source": "NOAA 30-year avg (cached)", "year": 2024, "fetchedAt": "2025-01-01T00:00:00.000Z"
+  },
+  "las-vegas-nv": {
+    "months": [
+      { "month": 1, "avgHigh": 58, "avgLow": 37, "totalPrecipInches": 0.5 },
+      { "month": 2, "avgHigh": 63, "avgLow": 41, "totalPrecipInches": 0.7 },
+      { "month": 3, "avgHigh": 70, "avgLow": 47, "totalPrecipInches": 0.4 },
+      { "month": 4, "avgHigh": 78, "avgLow": 54, "totalPrecipInches": 0.2 },
+      { "month": 5, "avgHigh": 89, "avgLow": 63, "totalPrecipInches": 0.1 },
+      { "month": 6, "avgHigh": 100, "avgLow": 73, "totalPrecipInches": 0.1 },
+      { "month": 7, "avgHigh": 105, "avgLow": 80, "totalPrecipInches": 0.4 },
+      { "month": 8, "avgHigh": 103, "avgLow": 78, "totalPrecipInches": 0.3 },
+      { "month": 9, "avgHigh": 96, "avgLow": 70, "totalPrecipInches": 0.3 },
+      { "month": 10, "avgHigh": 82, "avgLow": 58, "totalPrecipInches": 0.3 },
+      { "month": 11, "avgHigh": 68, "avgLow": 45, "totalPrecipInches": 0.3 },
+      { "month": 12, "avgHigh": 57, "avgLow": 37, "totalPrecipInches": 0.4 }
+    ],
+    "source": "NOAA 30-year avg (cached)", "year": 2024, "fetchedAt": "2025-01-01T00:00:00.000Z"
+  },
+  "salt-lake-city-ut": {
+    "months": [
+      { "month": 1, "avgHigh": 37, "avgLow": 21, "totalPrecipInches": 1.3 },
+      { "month": 2, "avgHigh": 43, "avgLow": 25, "totalPrecipInches": 1.2 },
+      { "month": 3, "avgHigh": 54, "avgLow": 33, "totalPrecipInches": 1.8 },
+      { "month": 4, "avgHigh": 62, "avgLow": 39, "totalPrecipInches": 2.1 },
+      { "month": 5, "avgHigh": 73, "avgLow": 48, "totalPrecipInches": 2.0 },
+      { "month": 6, "avgHigh": 84, "avgLow": 57, "totalPrecipInches": 0.9 },
+      { "month": 7, "avgHigh": 93, "avgLow": 65, "totalPrecipInches": 0.7 },
+      { "month": 8, "avgHigh": 91, "avgLow": 64, "totalPrecipInches": 0.7 },
+      { "month": 9, "avgHigh": 80, "avgLow": 53, "totalPrecipInches": 1.1 },
+      { "month": 10, "avgHigh": 65, "avgLow": 41, "totalPrecipInches": 1.5 },
+      { "month": 11, "avgHigh": 49, "avgLow": 30, "totalPrecipInches": 1.4 },
+      { "month": 12, "avgHigh": 37, "avgLow": 21, "totalPrecipInches": 1.3 }
+    ],
+    "source": "NOAA 30-year avg (cached)", "year": 2024, "fetchedAt": "2025-01-01T00:00:00.000Z"
+  },
+  "columbus-oh": {
+    "months": [
+      { "month": 1, "avgHigh": 36, "avgLow": 21, "totalPrecipInches": 2.8 },
+      { "month": 2, "avgHigh": 40, "avgLow": 23, "totalPrecipInches": 2.2 },
+      { "month": 3, "avgHigh": 51, "avgLow": 31, "totalPrecipInches": 3.0 },
+      { "month": 4, "avgHigh": 63, "avgLow": 40, "totalPrecipInches": 3.4 },
+      { "month": 5, "avgHigh": 73, "avgLow": 50, "totalPrecipInches": 4.1 },
+      { "month": 6, "avgHigh": 82, "avgLow": 60, "totalPrecipInches": 4.1 },
+      { "month": 7, "avgHigh": 85, "avgLow": 64, "totalPrecipInches": 4.7 },
+      { "month": 8, "avgHigh": 84, "avgLow": 62, "totalPrecipInches": 3.3 },
+      { "month": 9, "avgHigh": 78, "avgLow": 55, "totalPrecipInches": 2.8 },
+      { "month": 10, "avgHigh": 65, "avgLow": 43, "totalPrecipInches": 2.6 },
+      { "month": 11, "avgHigh": 52, "avgLow": 34, "totalPrecipInches": 3.0 },
+      { "month": 12, "avgHigh": 40, "avgLow": 25, "totalPrecipInches": 2.8 }
+    ],
+    "source": "NOAA 30-year avg (cached)", "year": 2024, "fetchedAt": "2025-01-01T00:00:00.000Z"
+  },
+  "indianapolis-in": {
+    "months": [
+      { "month": 1, "avgHigh": 35, "avgLow": 20, "totalPrecipInches": 2.5 },
+      { "month": 2, "avgHigh": 40, "avgLow": 23, "totalPrecipInches": 2.2 },
+      { "month": 3, "avgHigh": 52, "avgLow": 32, "totalPrecipInches": 3.2 },
+      { "month": 4, "avgHigh": 63, "avgLow": 41, "totalPrecipInches": 3.7 },
+      { "month": 5, "avgHigh": 73, "avgLow": 52, "totalPrecipInches": 4.5 },
+      { "month": 6, "avgHigh": 83, "avgLow": 61, "totalPrecipInches": 4.2 },
+      { "month": 7, "avgHigh": 86, "avgLow": 65, "totalPrecipInches": 4.4 },
+      { "month": 8, "avgHigh": 84, "avgLow": 63, "totalPrecipInches": 3.5 },
+      { "month": 9, "avgHigh": 78, "avgLow": 55, "totalPrecipInches": 2.9 },
+      { "month": 10, "avgHigh": 65, "avgLow": 43, "totalPrecipInches": 3.0 },
+      { "month": 11, "avgHigh": 51, "avgLow": 33, "totalPrecipInches": 3.3 },
+      { "month": 12, "avgHigh": 39, "avgLow": 24, "totalPrecipInches": 2.9 }
+    ],
+    "source": "NOAA 30-year avg (cached)", "year": 2024, "fetchedAt": "2025-01-01T00:00:00.000Z"
+  },
+  "san-diego-ca": {
+    "months": [
+      { "month": 1, "avgHigh": 66, "avgLow": 48, "totalPrecipInches": 2.0 },
+      { "month": 2, "avgHigh": 66, "avgLow": 50, "totalPrecipInches": 2.3 },
+      { "month": 3, "avgHigh": 66, "avgLow": 52, "totalPrecipInches": 1.8 },
+      { "month": 4, "avgHigh": 68, "avgLow": 55, "totalPrecipInches": 0.6 },
+      { "month": 5, "avgHigh": 69, "avgLow": 58, "totalPrecipInches": 0.2 },
+      { "month": 6, "avgHigh": 72, "avgLow": 61, "totalPrecipInches": 0.1 },
+      { "month": 7, "avgHigh": 76, "avgLow": 65, "totalPrecipInches": 0.0 },
+      { "month": 8, "avgHigh": 78, "avgLow": 66, "totalPrecipInches": 0.1 },
+      { "month": 9, "avgHigh": 77, "avgLow": 64, "totalPrecipInches": 0.2 },
+      { "month": 10, "avgHigh": 74, "avgLow": 59, "totalPrecipInches": 0.5 },
+      { "month": 11, "avgHigh": 69, "avgLow": 52, "totalPrecipInches": 1.0 },
+      { "month": 12, "avgHigh": 65, "avgLow": 47, "totalPrecipInches": 1.6 }
+    ],
+    "source": "NOAA 30-year avg (cached)", "year": 2024, "fetchedAt": "2025-01-01T00:00:00.000Z"
+  }
+}
