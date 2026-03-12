@@ -50,13 +50,13 @@ export default function AnimatedStats() {
       {stats.map((stat, i) => (
         <div
           key={stat.label}
-          className="glass-card px-8 py-5 text-center min-w-[140px]"
+          className="bg-white rounded-xl px-8 py-5 text-center min-w-[140px] shadow-lg"
         >
-          <div className="text-3xl font-bold text-white">
+          <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
             {values[i].toLocaleString()}
             {stat.suffix}
           </div>
-          <div className="text-sm text-white font-medium mt-1">{stat.label}</div>
+          <div className="text-sm text-gray-600 font-medium mt-1">{stat.label}</div>
         </div>
       ))}
     </div>
