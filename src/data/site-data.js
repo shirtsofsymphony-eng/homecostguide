@@ -5,7 +5,7 @@
 // ============================================================
 
 export const SITE_NAME = "HomeCostGuide";
-export const SITE_URL = "https://www.homecostguide.com"; // Update after domain purchase
+export const SITE_URL = "https://www.homecostguide.us";
 export const SITE_DESCRIPTION = "Accurate, local home improvement cost data for every major US metro. Find what projects really cost in your area.";
 
 // ============================================================
