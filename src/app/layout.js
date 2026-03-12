@@ -40,7 +40,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        {/* Ezoic / Mediavine ad script will go here */}
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3292877774103361" crossOrigin="anonymous" />
       </head>
       <body className="min-h-screen flex flex-col">
         <Header siteName={SITE_NAME} />
