@@ -4,6 +4,7 @@ import { metroData, getBestMonthsText, getWorstMonthsText } from '../../../../da
 import CostBreakdownTable from '../../../../components/CostBreakdownTable';
 import CostCalculator from '../../../../components/CostCalculator';
 import CostGuideSchema from '../../../../components/CostGuideSchema';
+import { HomeIcon, ChevronRightIcon, ChevronDownIcon, LocationPinIcon, getServiceIcon } from '../../../../components/icons';
 
 // Generated data (fallbacks baked into JSON files)
 import blsWages from '../../../../data/generated/bls-wages.json';
@@ -56,27 +57,42 @@ export default function CostGuidePage({ params }) {
     ? Math.round(((wages.avgHourlyWage - nationalAvgWage) / nationalAvgWage) * 100)
     : 0;
 
+  const ServiceIcon = getServiceIcon(service.slug);
+
   return (
     <article className="max-w-3xl mx-auto px-4 py-8">
       {/* Breadcrumbs */}
-      <nav className="text-sm text-gray-400 mb-6">
-        <a href="/" className="hover:text-blue-600">Home</a>
-        <span className="mx-2">&rsaquo;</span>
-        <a href={`/cost/${service.slug}/`} className="hover:text-blue-600">{service.name}</a>
-        <span className="mx-2">&rsaquo;</span>
-        <span className="text-gray-600">{metro.city}, {metro.stateCode}</span>
+      <nav className="flex flex-wrap items-center gap-1.5 mb-6">
+        <a href="/" className="breadcrumb-pill">
+          <HomeIcon className="w-3.5 h-3.5" />
+          Home
+        </a>
+        <ChevronRightIcon className="w-3 h-3 text-gray-300" />
+        <a href={`/cost/${service.slug}/`} className="breadcrumb-pill">{service.name}</a>
+        <ChevronRightIcon className="w-3 h-3 text-gray-300" />
+        <span className="breadcrumb-pill bg-blue-50 text-blue-700">
+          <LocationPinIcon className="w-3.5 h-3.5" />
+          {metro.city}, {metro.stateCode}
+        </span>
       </nav>
 
-      <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-        How Much Does {service.name} Cost in {metro.city}, {metro.stateCode}?
-      </h1>
-      <p className="text-gray-500 text-sm mb-6">
-        Updated March 2026 &middot; {metro.city} metro area
-        {wages ? ` · Based on BLS wage data and local market costs` : ''}
-      </p>
+      <div className="flex items-start gap-3 mb-4">
+        <div className="p-2.5 bg-blue-50 rounded-xl text-blue-600 mt-1">
+          <ServiceIcon className="w-6 h-6" />
+        </div>
+        <div>
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-900">
+            How Much Does {service.name} Cost in {metro.city}, {metro.stateCode}?
+          </h1>
+          <p className="text-gray-500 text-sm mt-2">
+            Updated March 2026 &middot; {metro.city} metro area
+            {wages ? ` · Based on BLS wage data and local market costs` : ''}
+          </p>
+        </div>
+      </div>
 
       {/* Cost highlight box */}
-      <div className="cost-highlight mb-8">
+      <div className="cost-highlight mb-8 animate-on-scroll">
         <div className="text-sm text-blue-600 font-medium mb-2">{metro.city} Average Cost ({service.unit})</div>
         <div className="flex items-end gap-6 mb-4">
           <div><div className="text-xs text-gray-500">Low</div><div className="text-2xl font-bold text-gray-700">${cost.low.toLocaleString()}</div></div>
@@ -84,7 +100,7 @@ export default function CostGuidePage({ params }) {
           <div><div className="text-xs text-gray-500">High</div><div className="text-2xl font-bold text-gray-700">${cost.high.toLocaleString()}</div></div>
         </div>
         <div className="h-3 bg-blue-100 rounded-full overflow-hidden">
-          <div className="h-full bg-gradient-to-r from-blue-400 to-blue-600 rounded-full" style={{ width: `${Math.min(((cost.avg - cost.low) / (cost.high - cost.low)) * 100, 100)}%` }} />
+          <div className="h-full bg-gradient-to-r from-blue-400 to-blue-600 rounded-full bar-animate" style={{ '--bar-width': `${Math.min(((cost.avg - cost.low) / (cost.high - cost.low)) * 100, 100)}%` }} />
         </div>
         <div className="flex justify-between text-xs text-gray-400 mt-1"><span>Budget</span><span>Mid-Range</span><span>Premium</span></div>
       </div>
@@ -115,7 +131,7 @@ export default function CostGuidePage({ params }) {
 
         {/* BLS wage context */}
         {wages && (
-          <div className="bg-amber-50 border border-amber-200 rounded-lg p-4">
+          <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 animate-on-scroll">
             <h3 className="font-semibold text-gray-900 mb-2">Local Labor Costs</h3>
             <p className="text-sm">
               Construction workers in {metro.city} earn an average of <strong>${wages.avgHourlyWage}/hr</strong> &mdash;{' '}
@@ -167,13 +183,13 @@ export default function CostGuidePage({ params }) {
           {mData.seasonalNote && <p>{mData.seasonalNote}</p>}
 
           {mData.bestMonths && (
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div className="bg-green-50 border border-green-200 rounded-lg p-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 animate-on-scroll">
+              <div className="bg-green-50 border border-green-200 rounded-xl p-4">
                 <h3 className="font-semibold text-green-800 text-sm mb-1">Best Months</h3>
                 <p className="text-sm text-green-700">{getBestMonthsText(metro.slug)}</p>
                 <p className="text-xs text-green-600 mt-1">Lower demand often means better pricing and faster scheduling.</p>
               </div>
-              <div className="bg-red-50 border border-red-200 rounded-lg p-4">
+              <div className="bg-red-50 border border-red-200 rounded-xl p-4">
                 <h3 className="font-semibold text-red-800 text-sm mb-1">Peak Season (Higher Prices)</h3>
                 <p className="text-sm text-red-700">{getWorstMonthsText(metro.slug)}</p>
                 <p className="text-xs text-red-600 mt-1">High demand can add 10-20% to project costs.</p>
@@ -185,10 +201,10 @@ export default function CostGuidePage({ params }) {
           {climate && climate.months && climate.months.length > 0 && (
             <div className="mt-4">
               <h3 className="font-semibold text-gray-900 mb-2 text-sm">Monthly Weather in {metro.city}</h3>
-              <div className="overflow-x-auto">
-                <table className="w-full text-xs border-collapse">
+              <div className="overflow-x-auto rounded-xl border border-gray-200">
+                <table className="table-pro w-full text-xs border-collapse">
                   <thead>
-                    <tr className="bg-gray-50 border-b border-gray-200">
+                    <tr className="bg-gray-50">
                       <th className="py-2 px-2 text-left text-gray-600">Month</th>
                       {climate.months.map(m => (
                         <th key={m.month} className="py-2 px-2 text-center text-gray-600">
@@ -247,7 +263,7 @@ export default function CostGuidePage({ params }) {
             </p>
           )}
           {mData.licensing.threshold && (
-            <p className="text-sm bg-yellow-50 border border-yellow-200 rounded-lg p-3">
+            <p className="text-sm bg-yellow-50 border border-yellow-200 rounded-xl p-3">
               In {metro.stateCode}, a contractor license is required for projects over <strong>${mData.licensing.threshold.toLocaleString()}</strong>. Always verify before hiring.
             </p>
           )}
@@ -272,8 +288,11 @@ export default function CostGuidePage({ params }) {
         <h2 className="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
         <div className="space-y-3">
           {service.faqs.map((faq, i) => (
-            <details key={i} className="border border-gray-200 rounded-lg">
-              <summary className="px-5 py-4 cursor-pointer font-medium text-gray-900 hover:bg-gray-50">{faq.q}</summary>
+            <details key={i} className="border border-gray-200 rounded-xl group">
+              <summary className="px-5 py-4 font-medium text-gray-900 hover:bg-gray-50 rounded-xl flex items-center justify-between transition">
+                {faq.q}
+                <ChevronDownIcon className="w-4 h-4 text-gray-400 faq-chevron shrink-0 ml-2" />
+              </summary>
               <div className="px-5 pb-4 text-gray-600 text-sm leading-relaxed">{faq.a}</div>
             </details>
           ))}
@@ -290,15 +309,18 @@ export default function CostGuidePage({ params }) {
           {otherMetros.map((m) => {
             const c = getLocalCost(service, m);
             return (
-              <a key={m.slug} href={`/cost/${service.slug}/${m.slug}/`} className="border border-gray-200 rounded-lg p-3 hover:border-blue-300 transition text-center">
-                <div className="font-medium text-sm text-gray-900">{m.city}, {m.stateCode}</div>
+              <a key={m.slug} href={`/cost/${service.slug}/${m.slug}/`} className="card-elevated p-3 text-center group">
+                <div className="flex justify-center mb-1">
+                  <LocationPinIcon className="w-4 h-4 text-gray-300 group-hover:text-blue-500 transition" />
+                </div>
+                <div className="font-medium text-sm text-gray-900 group-hover:text-blue-600 transition">{m.city}, {m.stateCode}</div>
                 <div className="text-blue-700 font-bold">${c.avg.toLocaleString()}</div>
               </a>
             );
           })}
         </div>
         <div className="mt-3 text-center">
-          <a href={`/compare/${service.slug}/`} className="text-sm text-blue-600 hover:underline">
+          <a href={`/compare/${service.slug}/`} className="text-sm text-blue-600 hover:underline font-medium">
             Compare all {metros.length} cities &rarr;
           </a>
         </div>
@@ -310,9 +332,13 @@ export default function CostGuidePage({ params }) {
         <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
           {relatedServices.map((s) => {
             const c = getLocalCost(s, metro);
+            const Icon = getServiceIcon(s.slug);
             return (
-              <a key={s.slug} href={`/cost/${s.slug}/${metro.slug}/`} className="border border-gray-200 rounded-lg p-3 hover:border-blue-300 transition">
-                <div className="font-medium text-sm text-gray-900">{s.name}</div>
+              <a key={s.slug} href={`/cost/${s.slug}/${metro.slug}/`} className="card-elevated p-3 group">
+                <div className="flex items-center gap-2 mb-1">
+                  <Icon className="w-4 h-4 text-gray-400 group-hover:text-blue-500 transition" />
+                  <span className="font-medium text-sm text-gray-900 group-hover:text-blue-600 transition">{s.name}</span>
+                </div>
                 <div className="text-blue-700 font-bold">${c.avg.toLocaleString()}</div>
               </a>
             );
@@ -321,10 +347,10 @@ export default function CostGuidePage({ params }) {
       </section>
 
       {/* CTA */}
-      <section className="mt-8 bg-blue-50 rounded-xl p-6 text-center">
+      <section className="mt-8 bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-100 rounded-xl p-6 text-center animate-on-scroll">
         <h3 className="text-lg font-bold text-gray-900 mb-2">Ready to Get Quotes?</h3>
         <p className="text-sm text-gray-600 mb-4">Browse top-rated {metro.city} contractors</p>
-        <a href={`/directory/${service.slug}/${metro.slug}/`} className="inline-block bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-blue-700 transition">
+        <a href={`/directory/${service.slug}/${metro.slug}/`} className="inline-block bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold px-6 py-3 rounded-xl hover:shadow-lg hover:shadow-blue-600/20 transition-all duration-200">
           Find Contractors
         </a>
       </section>

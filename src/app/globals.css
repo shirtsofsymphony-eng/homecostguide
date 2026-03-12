@@ -10,6 +10,9 @@
   --brand-700: #1D4ED8;
   --brand-800: #1E3A5F;
   --brand-900: #0F172A;
+  --glass-bg: rgba(255, 255, 255, 0.75);
+  --glass-border: rgba(255, 255, 255, 0.25);
+  --shadow-card: 0 1px 3px rgba(0,0,0,0.06), 0 6px 16px rgba(0,0,0,0.04);
 }
 
 body {
@@ -19,7 +22,153 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Ad placeholder styles — Ezoic/Mediavine will inject here */
+/* ─── Scroll Animations ─── */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.animate-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ─── Glass Card ─── */
+.glass-card {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 0.75rem;
+}
+
+/* ─── Elevated Card ─── */
+.card-elevated {
+  background: #ffffff;
+  border-radius: 0.75rem;
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+}
+.card-elevated::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(to right, #3B82F6, #6366F1);
+  border-radius: 0.75rem 0.75rem 0 0;
+}
+.card-elevated:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08), 0 12px 28px rgba(0,0,0,0.06);
+}
+
+/* ─── Gradient Text ─── */
+.gradient-text {
+  background: linear-gradient(135deg, #3B82F6, #6366F1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ─── Bar Animation ─── */
+.bar-animate {
+  width: 0%;
+  animation: barGrow 1s ease-out forwards;
+}
+@keyframes barGrow {
+  0% { width: 0%; }
+  100% { width: var(--bar-width); }
+}
+
+/* ─── Pro Table ─── */
+.table-pro tr {
+  transition: background-color 0.15s ease;
+}
+.table-pro tbody tr:hover {
+  background-color: rgba(59, 130, 246, 0.04);
+  border-left: 3px solid #3B82F6;
+}
+
+/* ─── Hero Pattern Overlay ─── */
+.hero-pattern {
+  position: relative;
+}
+.hero-pattern::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(255,255,255,0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+  pointer-events: none;
+}
+
+/* ─── FAQ Smooth Expand ─── */
+details summary {
+  cursor: pointer;
+  list-style: none;
+}
+details summary::-webkit-details-marker {
+  display: none;
+}
+details .faq-chevron {
+  transition: transform 0.2s ease;
+}
+details[open] .faq-chevron {
+  transform: rotate(180deg);
+}
+
+/* ─── Range Slider ─── */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 6px;
+  background: #DBEAFE;
+  border-radius: 3px;
+  outline: none;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #2563EB;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(37, 99, 235, 0.3);
+}
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #2563EB;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 2px 6px rgba(37, 99, 235, 0.3);
+}
+
+/* ─── Breadcrumb Pills ─── */
+.breadcrumb-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.25rem 0.75rem;
+  background: #F1F5F9;
+  border-radius: 9999px;
+  font-size: 0.8125rem;
+  color: #475569;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.breadcrumb-pill:hover {
+  background: #E2E8F0;
+  color: #1D4ED8;
+}
+
+/* ─── Ad placeholder styles ─── */
 .ad-slot {
   min-height: 250px;
   background: #f8fafc;
@@ -33,7 +182,7 @@ body {
   border-radius: 0.5rem;
 }
 
-/* Cost range highlight */
+/* ─── Cost range highlight ─── */
 .cost-highlight {
   background: linear-gradient(135deg, #EFF6FF, #DBEAFE);
   border: 1px solid #BFDBFE;

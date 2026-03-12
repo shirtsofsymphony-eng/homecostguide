@@ -1,12 +1,6 @@
-// ============================================================
-// CostBreakdownTable — Server component
-// Renders a static HTML table of itemized costs for a service,
-// adjusted by metro costIndex. Includes affiliate links on
-// material line items. No client-side JS.
-// ============================================================
-
 import { costBreakdowns, calculateBreakdown } from '../data/cost-breakdowns';
 import { getAffiliateLink } from '../data/affiliate-links';
+import { ExternalLinkIcon } from './icons';
 import AffiliateDisclosure from './AffiliateDisclosure';
 
 export default function CostBreakdownTable({ serviceSlug, costIndex = 1.0, tier = 'mid' }) {
@@ -26,10 +20,10 @@ export default function CostBreakdownTable({ serviceSlug, costIndex = 1.0, tier 
         Estimated for {breakdown.defaultProjectSize.label}: {breakdown.defaultProjectSize.value.toLocaleString()} {breakdown.defaultProjectSize.unit} &middot; {tierLabel} tier &middot; Local cost index: {costIndex}x
       </p>
 
-      <div className="overflow-x-auto">
-        <table className="w-full border-collapse text-sm">
+      <div className="overflow-x-auto rounded-xl border border-gray-200">
+        <table className="table-pro w-full border-collapse text-sm">
           <thead>
-            <tr className="bg-gray-50 border-b border-gray-200">
+            <tr className="bg-gray-50">
               <th className="text-left py-3 px-4 font-semibold text-gray-700">Line Item</th>
               <th className="text-right py-3 px-4 font-semibold text-gray-700">Low</th>
               <th className="text-right py-3 px-4 font-semibold text-gray-700">Mid</th>
@@ -40,18 +34,19 @@ export default function CostBreakdownTable({ serviceSlug, costIndex = 1.0, tier 
             {calculated.items.map((item, i) => {
               const affiliate = item.affiliateCategory ? getAffiliateLink(item.affiliateCategory) : null;
               return (
-                <tr key={i} className={`border-b border-gray-100 ${i % 2 === 0 ? '' : 'bg-gray-50/50'}`}>
+                <tr key={i} className={`border-b border-gray-100 transition-colors hover:bg-blue-50/40 ${i % 2 === 0 ? '' : 'bg-gray-50/50'}`}>
                   <td className="py-3 px-4">
                     <div className="font-medium text-gray-900">{item.label}</div>
                     <div className="text-xs text-gray-500 mt-0.5">{item.description}</div>
                     {affiliate && (
                       <a
                         href={affiliate.url}
-                        className="inline-block text-xs text-blue-500 hover:text-blue-700 mt-1"
+                        className="inline-flex items-center gap-1 text-xs text-blue-500 hover:text-blue-700 mt-1 transition"
                         target="_blank"
                         rel="noopener noreferrer nofollow"
                       >
-                        {affiliate.label} &rarr;
+                        {affiliate.label}
+                        <ExternalLinkIcon className="w-3 h-3" />
                       </a>
                     )}
                   </td>
@@ -69,7 +64,7 @@ export default function CostBreakdownTable({ serviceSlug, costIndex = 1.0, tier 
             })}
           </tbody>
           <tfoot>
-            <tr className="border-t-2 border-gray-300 bg-blue-50/50">
+            <tr className="border-t-2 border-gray-300 bg-gradient-to-r from-blue-50 to-white">
               <td className="py-3 px-4 font-bold text-gray-900">Total Estimated Cost</td>
               <td className="text-right py-3 px-4 font-bold text-gray-700">
                 ${calculated.totalLow.toLocaleString()}

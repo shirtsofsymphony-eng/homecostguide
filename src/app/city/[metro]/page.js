@@ -2,6 +2,7 @@ import { metros, services, getLocalCost } from '../../../data/site-data';
 import { metroData } from '../../../data/metro-data';
 import blsWages from '../../../data/generated/bls-wages.json';
 import buildingPermits from '../../../data/generated/building-permits.json';
+import { HomeIcon, ChevronRightIcon, LocationPinIcon, getServiceIcon } from '../../../components/icons';
 
 export function generateStaticParams() {
   return metros.map(m => ({ metro: m.slug }));
@@ -28,13 +29,14 @@ export default function CityHubPage({ params }) {
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
-      <nav className="text-sm text-gray-400 mb-6">
-        <a href="/" className="hover:text-blue-600">Home</a>
-        <span className="mx-2">&rsaquo;</span>
-        <span className="text-gray-600">{metro.city}, {metro.stateCode}</span>
+      <nav className="flex flex-wrap items-center gap-1.5 mb-6">
+        <a href="/" className="breadcrumb-pill"><HomeIcon className="w-3.5 h-3.5" />Home</a>
+        <ChevronRightIcon className="w-3 h-3 text-gray-300" />
+        <span className="breadcrumb-pill bg-blue-50 text-blue-700">{metro.city}, {metro.stateCode}</span>
       </nav>
 
-      <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+      <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 flex items-center gap-3">
+        <LocationPinIcon className="w-8 h-8 text-blue-600" />
         Home Improvement Costs in {metro.city}, {metro.stateCode}
       </h1>
       <p className="text-gray-600 mb-2">
@@ -46,13 +48,13 @@ export default function CityHubPage({ params }) {
 
       {/* ── City Overview / Enrichment Section ── */}
       {(enrichment || wages || permits) && (
-        <section className="mt-8 mb-8 border border-gray-200 rounded-lg p-6 bg-gray-50">
+        <section className="mt-8 mb-8 rounded-xl border border-gray-200 p-6 bg-gray-50">
           <h2 className="text-xl font-bold text-gray-900 mb-4">{metro.city} Construction Market Overview</h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {/* Climate Zone */}
             {enrichment?.climateZone && (
-              <div className="bg-white border border-gray-200 rounded-lg p-4">
+              <div className="card-elevated rounded-xl p-4">
                 <div className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-1">Climate Zone</div>
                 <div className="text-lg font-bold text-gray-900">{enrichment.climateZone}</div>
                 {enrichment?.climateLabel && (
@@ -63,7 +65,7 @@ export default function CityHubPage({ params }) {
 
             {/* Building Permits */}
             {permits?.totalPermits && (
-              <div className="bg-white border border-gray-200 rounded-lg p-4">
+              <div className="card-elevated rounded-xl p-4">
                 <div className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-1">Building Permits</div>
                 <div className="text-lg font-bold text-gray-900">{permits.totalPermits.toLocaleString()}</div>
                 <div className="text-sm text-gray-500">residential permits issued in {permits.year}</div>
@@ -72,7 +74,7 @@ export default function CityHubPage({ params }) {
 
             {/* BLS Wage */}
             {wages?.avgHourlyWage && (
-              <div className="bg-white border border-gray-200 rounded-lg p-4">
+              <div className="card-elevated rounded-xl p-4">
                 <div className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-1">Avg Construction Wage</div>
                 <div className="text-lg font-bold text-gray-900">${wages.avgHourlyWage.toFixed(2)}/hr</div>
                 <div className="text-sm text-gray-500">BLS average for construction trades</div>
@@ -81,7 +83,7 @@ export default function CityHubPage({ params }) {
 
             {/* Sales Tax */}
             {enrichment?.salesTaxRate != null && (
-              <div className="bg-white border border-gray-200 rounded-lg p-4">
+              <div className="card-elevated rounded-xl p-4">
                 <div className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-1">Sales Tax on Materials</div>
                 <div className="text-lg font-bold text-gray-900">{(enrichment.salesTaxRate * 100).toFixed(2)}%</div>
                 <div className="text-sm text-gray-500">applied to material purchases</div>
@@ -91,7 +93,7 @@ export default function CityHubPage({ params }) {
 
           {/* Licensing Info */}
           {enrichment?.licensing && (
-            <div className="mt-4 bg-white border border-gray-200 rounded-lg p-4">
+            <div className="mt-4 card-elevated rounded-xl p-4">
               <div className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-1">State Contractor Licensing</div>
               <p className="text-sm text-gray-700 mb-2">{enrichment.licensing.description}</p>
               {enrichment.licensing.lookupUrl && (
@@ -111,14 +113,19 @@ export default function CityHubPage({ params }) {
 
       <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">All Services in {metro.city}</h2>
       <div className="space-y-2">
-        {services.map((service) => {
+        {services.map((service, i) => {
           const cost = getLocalCost(service, metro);
+          const ServiceIcon = getServiceIcon(service.slug);
           return (
             <a key={service.slug} href={`/cost/${service.slug}/${metro.slug}/`}
-              className="flex justify-between items-center border border-gray-200 rounded-lg px-4 py-3 hover:border-blue-300 hover:shadow-sm transition">
-              <div>
-                <div className="font-medium text-gray-900">{service.name}</div>
-                <div className="text-xs text-gray-400">{service.category} &middot; {service.unit}</div>
+              className="card-elevated rounded-xl flex justify-between items-center px-4 py-3 hover:border-blue-300 transition animate-on-scroll"
+              style={{ transitionDelay: `${i * 0.03}s` }}>
+              <div className="flex items-center gap-3">
+                <ServiceIcon className="w-5 h-5 text-blue-500" />
+                <div>
+                  <div className="font-medium text-gray-900">{service.name}</div>
+                  <div className="text-xs text-gray-400">{service.category} &middot; {service.unit}</div>
+                </div>
               </div>
               <div className="text-right">
                 <div className="text-lg font-bold text-blue-700">${cost.avg.toLocaleString()}</div>
@@ -134,8 +141,10 @@ export default function CityHubPage({ params }) {
       <section className="mt-8 pt-8 border-t border-gray-200">
         <h2 className="text-xl font-bold text-gray-900 mb-4">Compare Other Cities</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
-          {otherMetros.map((m) => (
-            <a key={m.slug} href={`/city/${m.slug}/`} className="border border-gray-200 rounded-lg px-3 py-2 text-center hover:border-blue-300 transition">
+          {otherMetros.map((m, i) => (
+            <a key={m.slug} href={`/city/${m.slug}/`}
+              className="card-elevated rounded-xl px-3 py-2 text-center hover:border-blue-300 transition animate-on-scroll"
+              style={{ transitionDelay: `${i * 0.03}s` }}>
               <div className="font-medium text-sm text-gray-900">{m.city}</div>
               <div className="text-xs text-gray-400">{m.stateCode}</div>
             </a>
