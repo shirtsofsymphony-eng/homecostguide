@@ -17,6 +17,9 @@ export const metadata = {
     follow: true,
     googleBot: { index: true, follow: true },
   },
+  verification: {
+    google: 'pLES44HF1yzVMBt7lsQm0LKpS0V-wwvCN4PJ7kiDiHI',
+  },
 };
 
 // Pick a few popular combos for footer links
