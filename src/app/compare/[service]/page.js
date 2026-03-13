@@ -2,6 +2,7 @@ import { metros, services, getLocalCost, SITE_NAME } from '../../../data/site-da
 import { HomeIcon, ChevronRightIcon, LocationPinIcon, getServiceIcon } from '../../../components/icons';
 import blsWages from '../../../data/generated/bls-wages.json';
 import buildingPermits from '../../../data/generated/building-permits.json';
+import AdUnit from '../../../components/AdUnit';
 
 export function generateStaticParams() {
   return services.map(s => ({ service: s.slug }));
@@ -164,7 +165,7 @@ export default function CompareServicePage({ params }) {
         </div>
       </section>
 
-      <div className="ad-slot mt-8" data-ad-slot="bottom-compare">Ad Space</div>
+      <AdUnit slot="bottom" className="mt-8" />
     </article>
   );
 }

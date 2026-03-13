@@ -5,6 +5,7 @@ import CostBreakdownTable from '../../../../components/CostBreakdownTable';
 import CostCalculator from '../../../../components/CostCalculator';
 import CostGuideSchema from '../../../../components/CostGuideSchema';
 import { HomeIcon, ChevronRightIcon, ChevronDownIcon, LocationPinIcon, getServiceIcon } from '../../../../components/icons';
+import AdUnit from '../../../../components/AdUnit';
 
 // Generated data (fallbacks baked into JSON files)
 import blsWages from '../../../../data/generated/bls-wages.json';
@@ -105,7 +106,7 @@ export default function CostGuidePage({ params }) {
         <div className="flex justify-between text-xs text-gray-400 mt-1"><span>Budget</span><span>Mid-Range</span><span>Premium</span></div>
       </div>
 
-      <div className="ad-slot" data-ad-slot="after-cost-box">Ad Space</div>
+      <AdUnit slot="top" />
 
       {/* Itemized cost breakdown table */}
       {breakdown && (
@@ -247,7 +248,7 @@ export default function CostGuidePage({ params }) {
         </section>
       )}
 
-      <div className="ad-slot mt-8" data-ad-slot="mid-article">Ad Space</div>
+      <AdUnit slot="mid" className="mt-8" />
 
       {/* Licensing & permits */}
       {mData.licensing && (
@@ -355,7 +356,7 @@ export default function CostGuidePage({ params }) {
         </a>
       </section>
 
-      <div className="ad-slot mt-8" data-ad-slot="bottom-article">Ad Space</div>
+      <AdUnit slot="bottom" className="mt-8" />
     </article>
   );
 }

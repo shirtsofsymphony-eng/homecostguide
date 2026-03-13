@@ -1,6 +1,7 @@
 import { metros, services, getLocalCost, SITE_NAME } from '../../../data/site-data';
 import { costBreakdowns } from '../../../data/cost-breakdowns';
 import { HomeIcon, ChevronRightIcon, getServiceIcon } from '../../../components/icons';
+import AdUnit from '../../../components/AdUnit';
 
 export function generateStaticParams() {
   return services.map(s => ({ service: s.slug }));
@@ -45,7 +46,7 @@ export default function ServicePage({ params }) {
         </div>
       </div>
 
-      <div className="ad-slot" data-ad-slot="top">Ad Space</div>
+      <AdUnit slot="top" />
 
       {/* National Cost Breakdown Summary */}
       {breakdown?.items && (
@@ -111,7 +112,7 @@ export default function ServicePage({ params }) {
         })}
       </div>
 
-      <div className="ad-slot mt-8" data-ad-slot="bottom">Ad Space</div>
+      <AdUnit slot="bottom" className="mt-8" />
     </div>
   );
 }

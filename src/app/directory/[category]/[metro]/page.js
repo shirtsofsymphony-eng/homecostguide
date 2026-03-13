@@ -1,4 +1,5 @@
 import { metros, services, getLocalCost } from '../../../../data/site-data';
+import AdUnit from '../../../../components/AdUnit';
 
 export function generateStaticParams() {
   const params = [];
@@ -55,7 +56,7 @@ export default function DirectoryPage({ params }) {
         </a>
       </div>
 
-      <div className="ad-slot" data-ad-slot="top">Ad Space</div>
+      <AdUnit slot="top" />
 
       {/* Contractor directory — populated after data scrape */}
       <div className="mt-6">
@@ -72,7 +73,7 @@ export default function DirectoryPage({ params }) {
         </div>
       </div>
 
-      <div className="ad-slot mt-8" data-ad-slot="bottom">Ad Space</div>
+      <AdUnit slot="bottom" className="mt-8" />
 
       {/* Tips section to add SEO value even before contractor data */}
       <section className="mt-8">

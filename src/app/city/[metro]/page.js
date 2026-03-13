@@ -3,6 +3,7 @@ import { metroData } from '../../../data/metro-data';
 import blsWages from '../../../data/generated/bls-wages.json';
 import buildingPermits from '../../../data/generated/building-permits.json';
 import { HomeIcon, ChevronRightIcon, LocationPinIcon, getServiceIcon } from '../../../components/icons';
+import AdUnit from '../../../components/AdUnit';
 
 export function generateStaticParams() {
   return metros.map(m => ({ metro: m.slug }));
@@ -44,7 +45,7 @@ export default function CityHubPage({ params }) {
       </p>
       <p className="text-gray-500 text-sm mb-8">Updated March 2026 &middot; {services.length} services tracked</p>
 
-      <div className="ad-slot" data-ad-slot="top">Ad Space</div>
+      <AdUnit slot="top" />
 
       {/* ── City Overview / Enrichment Section ── */}
       {(enrichment || wages || permits) && (
@@ -136,7 +137,7 @@ export default function CityHubPage({ params }) {
         })}
       </div>
 
-      <div className="ad-slot mt-8" data-ad-slot="mid">Ad Space</div>
+      <AdUnit slot="mid" className="mt-8" />
 
       <section className="mt-8 pt-8 border-t border-gray-200">
         <h2 className="text-xl font-bold text-gray-900 mb-4">Compare Other Cities</h2>
@@ -152,7 +153,7 @@ export default function CityHubPage({ params }) {
         </div>
       </section>
 
-      <div className="ad-slot mt-8" data-ad-slot="bottom">Ad Space</div>
+      <AdUnit slot="bottom" className="mt-8" />
     </div>
   );
 }

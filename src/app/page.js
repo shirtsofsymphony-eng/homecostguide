@@ -1,6 +1,7 @@
 import { metros, services, SITE_NAME } from '../data/site-data';
 import { getServiceIcon, LocationPinIcon, CheckIcon, ArrowRightIcon } from '../components/icons';
 import AnimatedStats from '../components/AnimatedStats';
+import AdUnit from '../components/AdUnit';
 
 export default function HomePage() {
   const featuredServices = services.slice(0, 8);
@@ -36,7 +37,7 @@ export default function HomePage() {
       </section>
 
       <div className="max-w-5xl mx-auto px-4 mt-8">
-        <div className="ad-slot" data-ad-slot="top-of-content">Ad Space</div>
+        <AdUnit slot="top" />
       </div>
 
       {/* POPULAR COST GUIDES */}
@@ -81,7 +82,7 @@ export default function HomePage() {
       </section>
 
       <div className="max-w-5xl mx-auto px-4">
-        <div className="ad-slot" data-ad-slot="mid-content">Ad Space</div>
+        <AdUnit slot="mid" />
       </div>
 
       {/* CITIES */}
@@ -190,7 +191,7 @@ export default function HomePage() {
       </section>
 
       <div className="max-w-5xl mx-auto px-4 mb-8">
-        <div className="ad-slot" data-ad-slot="bottom-content">Ad Space</div>
+        <AdUnit slot="bottom" />
       </div>
     </>
   );
