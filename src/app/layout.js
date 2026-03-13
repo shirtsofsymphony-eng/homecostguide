@@ -23,6 +23,9 @@ export const metadata = {
   verification: {
     google: 'pLES44HF1yzVMBt7lsQm0LKpS0V-wwvCN4PJ7kiDiHI',
   },
+  other: {
+    'impact-site-verification': 'ad65a329-35e9-42f8-aac5-aa8f568767aa',
+  },
 };
 
 const footerCostGuides = [
